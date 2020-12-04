@@ -1,0 +1,24 @@
+{
+  "name": "weathernotification",
+  "version": "1.0.0",
+  "description": "Used to push daily weather conditions on WeChat.",
+  "main": "app.js",
+  "scripts": {
+    "start": "PUSH_KEY=SCU120539T3886abd69affd4a2d3a69caf9d14acd65f966f72873dd CITY_CODE=320000 node src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Caozefu/WeatherNotification.git"
+  },
+  "author": "caozefu1997@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Caozefu/WeatherNotification/issues"
+  },
+  "homepage": "https://github.com/Caozefu/WeatherNotification#readme",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "moment": "^2.29.1"
+  }
+}
