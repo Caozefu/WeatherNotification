@@ -10,9 +10,11 @@ const weatherType = 0;
 
 if (!pushKey) return console.log("「警告」未设置[PUSH_KEY]，请参考README.MD设置后重试。");
 
-getWeather(apiKey, city, weatherType ? 'all' : '').then(res => {
-  pushMessage(res, weatherType, pushKey);
-}).catch(e => {
-  commonPush(pushKey, '天气信息获取失败', e);
-})
+setInterval(() => {
+  getWeather(apiKey, city, weatherType ? 'all' : '').then(res => {
+    pushMessage(res, weatherType, pushKey);
+  }).catch(e => {
+    commonPush(pushKey, '天气信息获取失败', e);
+  })
+}, 60 * 60 * 1000)
 
