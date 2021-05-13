@@ -3,7 +3,7 @@ const pushMessage = require('./utils/pushMessage');
 const commonPush = require('./utils/commonPush');
 
 const apiKey = process.env.API_KEY || "42c28125f337b6222dd42a3b32fbb5fd";
-const pushKey = process.env.PUSH_KEY;
+const pushKey = process.env.PUSH_KEY || 'SCU120539T3886abd69affd4a2d3a69caf9d14acd65f966f72873dd';
 const city = process.env.CITY_CODE || 110101;
 // 天气类型 0 - 实时天气  1 - 天气预报
 const weatherType = 0;
